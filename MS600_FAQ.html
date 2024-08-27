@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS600 Functions FAQ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .logo img {
+            height: 120px;
+            width: auto;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: #2980b9;
+            margin-bottom: 10px;
+        }
+        .faq-question::before {
+            content: "Q: ";
+            color: #e74c3c;
+        }
+        .faq-answer {
+            margin-left: 20px;
+        }
+        .faq-answer::before {
+            content: "A: ";
+            color: #27ae60;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="WeChat Image_20201211155127.png" alt="Logo">
+        </div>
+        <h1>MS600 Functions FAQ</h1>
+
+        <div class="faq-item">
+            <div class="faq-question">How to troubleshoot potential interference factors when using the MS600?</div>
+            <div class="faq-answer">Try to avoid placing objects such as plants or thick glass containing metal between the sensor and the human body, as they might interfere with the radar frequency band. If unavoidable, utilize the Detecting Distance setting to block the distance range where interference occurs, effectively excluding the interference caused by the object. Please note that the shielding distance refers to the sensing distance displayed on the app for the interfering object, not the actual distance.</div>
+        </div>
+
+     <div class="faq-item">
+            <div class="faq-question">When people leave the room, the Presence Sensor still shows Presence.</div>
+            <div class="faq-answer">After people leave the room, the detection result will change to "absence" after the set "absence confirmation time." For example, if the default setting is 30 seconds, it means that the detection result will change to "absence" 30 seconds after people leave the room.</div>
+        </div>
+
+   <div class="faq-item">
+            <div class="faq-question">When people are not within the detection area of the sensor, the sensor mistakenly reports "Presence."</div>
+            <div class="faq-answer">Check if there are any interfering factors in the room and eliminate them. If some interfering factors cannot be eliminated, you can use the "Detecting distance" setting to block the distance range where the interfering factor is located. Note that the shielding distance is the sensing distance displayed on the app for the interfering object, not the actual distance.</div>
+        </div>
+
+<div class="faq-item">
+            <div class="faq-question">When people are within the detection area of the Presence Sensor, but the sensor mistakenly reports "absence."</div>
+            <div class="faq-answer">Check if there are any obstacles blocking the 24GHz electromagnetic waves between the sensor and the human body, and remove them. If the human body still cannot be detected when there are no obstacles, adjust the angle of the sensor as much as possible to make it face the chest of the human body.</div>
+        </div>
+
+<div class="faq-item">
+            <div class="faq-question">The displayed distance of the human body is slightly inaccurate within 1.5 meters.</div>
+            <div class="faq-answer">Because the radar emits waves and calculates distance based on the waves reflected back, when a human body is within 1.5 meters, numerous reflected waves and micro-movements may occur, leading to potential inaccuracies in distance calculation. Thus, it is advisable to set the distance closer to the far boundary for enhanced stability, ideally between 2 meters and 5 meters.</div>
+        </div>
+
+<div class="faq-item">
+            <div class="faq-question">When using the Presence Sensor MS600, is there any radiation?</div>
+            <div class="faq-answer">The radiation power is very low, equivalent to Bluetooth, and complies with national certification standards, posing no harm to the human body.</div>
+        </div>
+
+<div class="faq-item">
+            <div class="faq-question">When using the Presence Sensor MS600 in a room with multiple moving objects, which one is detected?"</div>
+            <div class="faq-answer">To protect privacy, the system currently uses the object with the fastest movement or the largest amplitude of motion within the range as the reference object.</div>
+        </div>
+
+<div class="faq-item">
+            <div class="faq-question">[MS600]What to do if the illuminance is too low or insensitive?</div>
+            <div class="faq-answer">Lighting needs vary based on specific situations, activities, locations, and personal preferences. The placement angle of lighting devices also significantly impacts light intensity. To prevent automation from triggering due to temporary brightness changes (like people passing by or clouds), the device measures light intensity over time, calculates an average, and then determines if the conditions are met. The provided light intensity values are relative to the actual scene and should be adjusted accordingly. If the values are still too low after adjustment, please take a look at the performance for a period and fine-tune the automation settings based on recorded data.</div>
+        </div>
+
+<div class="faq-item">
+            <div class="faq-question">What smart home platforms does Meross Presence Sensor MS600 support?</div>
+            <div class="faq-answer">Meross Presence Sensor supports Matter, enabling connection through Apple, Google, and Amazon speakers without the need for additional devices. With Matter, local connection and control can be achieved through these three speaker brands, resulting in lower latency and more responsive reactions.</div>
+        </div>
+
+<div class="faq-item">
+            <div class="faq-question">What can be done with the approach and departure automation, and what is the use of the detecting distance configuration?</div>
+            <div class="faq-answer">You can set up automation for approaching and departing from the sensor. For example, when you approach the sensor, the light can brighten. The detecting distance settings correspond to 1 meter, 2 meters, and 3 meters. Entering this range will trigger an approaching event while leaving it will trigger a departure event.</div>
+        </div>
+
+<div class="faq-item">
+            <div class="faq-question">What is the recommended installation height?</div>
+            <div class="faq-answer">It is recommended to install the sensor at a height of 1.2-1.8 meters above the ground, facing the chest position of the target when static for a long time.</div>
+        </div>
+
+<div class="faq-item">
+            <div class="faq-question">Does the device collect user room information?</div>
+            <div class="faq-answer">No, this device does not collect any user actions, sounds, images, or household information. It can be used with confidence.</div>
+        </div>
+
+<div class="faq-item">
+            <div class="faq-question">What can Meross Presence Sensor detect？</div>
+            <div class="faq-answer">The Meross Presence Sensor can effectively determine the movement status of targets within the detection area, including presence, minor motion, and motion. It can also detect the current illuminance in the area in front of the device using its light sensor.</div>
+        </div>
+
+<div class="faq-item">
+            <div class="faq-question">How to prevent pets, robotic vacuums, or fans from triggering the Presence Sensor?</div>
+            <div class="faq-answer">When the sensor directly faces the target, elevate the front of the Meross Presence Sensor to make it as vertical to the ground as possible to minimize false triggers. However, some vertical space interference may still occur. Enable the "Biological Detection Only" mode in the Meross app settings. Additionally, install a pet-proof shield on the device to block infrared fluctuations in half of the area (blocking the upper half), effectively reducing false triggers caused by pets, robotic vacuums, or fans.</div>
+        </div>
+
+<div class="faq-item">
+            <div class="faq-question">What does Presence, Minor Motion, and Motion mean?</div>
+            <div class="faq-answer">Presence: Detected by chest movements during breathing.
+
+Minor Motion: Detected by small movements such as raising a hand or shaking.
+
+Motion: Detected by changes in the target's position.</div>
+        </div>
+
+<div class="faq-item">
+            <div class="faq-question">How to avoid triggering the lights by just passing through the room?</div>
+            <div class="faq-answer">Approach One: Set the maximum detection distance, beyond which the sensor stops detecting movements.
+
+Approach Two: In automation settings, configure the sensor to trigger other devices only after detecting someone's presence for X seconds.</div>
+        </div>
+
+<div class="faq-item">
+            <div class="faq-question">What should I do if the sensor is too sensitive or the detection area is too large?</div>
+            <div class="faq-answer">You can adjust the sensor's detection distance or sensitivity in the Meross app settings. Reducing the detection distance will prevent movements beyond this range from triggering the sensor. Lowering the sensitivity will prevent minor motion from triggering the sensor.</div>
+        </div>
+
+<div class="faq-item">
+            <div class="faq-question">Will reducing the absence conformation time affect battery life and detection performance?</div>
+            <div class="faq-answer">Yes, it will. Reducing the minimum no-presence determination time may increase the frequency of presence determinations, thereby shortening battery life. Additionally, a shorter determination time reduces the amount of data the sensor accumulates, which can affect detection accuracy and increase false negatives.</div>
+        </div>
+
+<div class="faq-item">
+            <div class="faq-question">Is the Meross Presence Sensor waterproof and suitable for use in the bathroom?</div>
+            <div class="faq-answer">The sensor is not waterproof. However, it can be used in the bathroom with caution. Ensure it is not exposed to splashing, drenching, or immersion in water.</div>
+        </div>
+
+    </div>
+</body>
+</html>
